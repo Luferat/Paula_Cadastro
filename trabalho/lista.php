@@ -10,7 +10,7 @@ if($qtd > 0){
 print "<table class= 'table table-hover table-striped table-bordered'>";
 
 print "<tr>";
-print "<th> # </th>" ;
+print "<th> Id </th>" ;
 print "<th> Nome </th>";
 print "<th>E-mail</th>";
 print "<th>Bio</th>";

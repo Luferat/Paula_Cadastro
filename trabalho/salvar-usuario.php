@@ -14,7 +14,7 @@ $status = $_POST["status"];
 
 $sql ="insert into usuarios (nome, email, senha, nascimento, bio, tipo, data, avatar, status) values ('{$nome}', '{$email}','{$senha}','{$nascimento}','{$bio}','{$tipo}','{$data}','{$avatar}','{$status}')";
 
-$res = $conn ->query ($sql);
+$res = $conn ->query($sql);
 
 if($res==true){
 print "<script>alert('cadastrado com sucesso');</script>";
@@ -43,20 +43,19 @@ $avatar = $_POST["avatar"];
 $status = $_POST["status"];
 
 $sql = "update usuarios set 
-nome= '{$nome}',
-email= '{$email}',
-senha= '{$senha}',
-nascimento= '{$nascimento}',
-bio= '{$bio}',
-tipo= '{$tipo}',
-data= '{$data}',
-avatar= '{$avatar}',
-status= '{$status}',
+nome='{$nome}',
+email='{$email}',
+senha='{$senha}',
+nascimento='{$nascimento}',
+bio='{$bio}',
+tipo='{$tipo}',
+data='{$data}',
+avatar='{$avatar}',
+status='{$status}',
 where
-id=" .$_REQUEST["id"];
+id=".$_REQUEST["id"];
 
 $res = $conn->query($sql);
-
 
 if($res==true){
 print "<script>alert('Editado com sucesso')</script>";

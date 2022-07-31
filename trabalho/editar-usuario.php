@@ -26,7 +26,7 @@ $row = $res->fetch_object();
 
     <div class="mb-3">
         <label>Senha</label>
-        <input type="password" name="senha" class="form-control" requered>
+        <input type="password" name="senha" class="form-control" required>
     </div>
 
     <div class="mb-3">

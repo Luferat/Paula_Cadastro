@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!--
-  By Luferat
-  Fiz essa versão nova de 'index.php' porque a versão origianl, salva como 'index.error.php' está com a estrutura HTML5 formata erradamente.
-  Por exemplo, temos elementos <div> dentro de <head> e o <body> fecha antes de outros elementos, quando deve fechar somente no final.
-
-  Compare as duas versões e faça ajustes nesta se necessário.
--->
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cadastro de Usuário</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
 
-<body>
+  <title>Cadastro de Usuário</title>
 
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -43,7 +32,7 @@
         <?php
 
         include("config.php");
-        switch (@$_REQUEST["page"]) { // OPA! CUIDADO COM O USO DO '@' em PHP!
+        switch (@$_REQUEST["page"]) {
 
           case "novo";
             include("novo.php");
@@ -71,16 +60,24 @@
     </div>
   </div>
 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-  <br><br>
-
-  <footer>
-    <div style="text-align:center">
-      <p>Desenvolvido por Ana Paula Simões e Maryanna Silveira em 2022!</p>
-    </div>
-  </footer>
 
 </body>
+
+<br><br>
+
+<footer>
+  <div align="center">
+    <p>Desenvolvido por Ana Paula Simões e Maryanna Silveira em 2022!</p>
+  </div>
+</footer>
 
 </html>

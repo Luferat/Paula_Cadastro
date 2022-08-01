@@ -42,14 +42,6 @@ $data = $_POST["data"];
 $avatar = $_POST["avatar"];
 $status = $_POST["status"];
 
-/**
- * By Luferat
- * O único erro que encontrei foi uma vírgula a mais ono final de "status='{$status}'".
- * 
- *  ERRADO → status='{$status}',
- *  CERTO  → status='{$status}'
- **/
-
 $sql = "update usuarios set 
 nome='{$nome}',
 email='{$email}',
@@ -63,7 +55,7 @@ status='{$status}'
 where
 id=".$_REQUEST["id"];
 
-// Degub → echo '<pre>'; print_r($sql); echo '</pre>'; exit;
+// Debug → echo '<pre>'; print_r($sql); echo '</pre>';
 
 $res = $conn->query($sql);
 
